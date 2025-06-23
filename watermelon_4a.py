@@ -1,8 +1,5 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
- 
+def is_divisible_weight(k):
+    return k > 2 and k % 2 == 0
+
 k = int(input())
-if k % 2 == 0 and k > 2:
-    print('YES')
-else:
-    print('NO')
+print("YES" if is_divisible_weight(k) else "NO")
